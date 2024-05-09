@@ -24,7 +24,8 @@ def encode_face(img):
     return np.array(face_descriptor)
 
 # main
-img1_path = 'D:/dev_D/DeepLearning/simple_face_recognition/img/Users/visualcamp/Pictures/DR0LKDqV4AA-V31.jpg' # iu
+img1_path = 'img/Users/visualcamp/Pictures/DR0LKDqV4AA-V31.jpg' # iu
+# D:/dev_D/DeepLearning/simple_face_recognition/
 
 # img2_path = '/Users/visualcamp/Pictures/00502318_20180518.JPG' # suz
 # img2_path = '/Users/visualcamp/Pictures/660190_v9_ba.jpg' # suz

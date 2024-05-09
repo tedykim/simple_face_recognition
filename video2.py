@@ -2,11 +2,11 @@ import dlib, cv2
 import numpy as np
 
 detector = dlib.get_frontal_face_detector()
-sp = dlib.shape_predictor('D:/dev_D/DeepLearning/simple_face_recognition/models/shape_predictor_68_face_landmarks.dat')
-facerec = dlib.face_recognition_model_v1('D:/dev_D/DeepLearning/simple_face_recognition/models/dlib_face_recognition_resnet_model_v1.dat')
-
+sp = dlib.shape_predictor('models/shape_predictor_68_face_landmarks.dat')
+facerec = dlib.face_recognition_model_v1('models/dlib_face_recognition_resnet_model_v1.dat')
+# D:/dev_D/DeepLearning/simple_face_recognition/
 descs = np.load('img/descs.npy')[()]
-
+# D:/dev_D/DeepLearning/simple_face_recognition/
 def encode_face(img):
   dets = detector(img, 1)
 
